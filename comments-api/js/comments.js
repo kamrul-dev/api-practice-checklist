@@ -1,5 +1,13 @@
 //load api from jsonplaceholder
 
-fetch('https://jsonplaceholder.typicode.com/comments')
+function loadData(){
+    fetch('https://jsonplaceholder.typicode.com/comments')
     .then(res => res.json())
-    .then(data => console.log(data));
+    .then(data => displayLoadData(data));
+}
+loadData();
+
+// display loaded data
+function displayLoadData(comments){
+    console.log(comments);
+}
