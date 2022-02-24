@@ -1,6 +1,6 @@
 //load api from jsonplaceholder
 
-function loadData() {
+const loadData = () => {
     fetch('https://jsonplaceholder.typicode.com/comments')
         .then(res => res.json())
         .then(data => displayLoadData(data));
@@ -8,7 +8,7 @@ function loadData() {
 // loadData();
 
 // display loaded data
-function displayLoadData(comments) {
+const displayLoadData = (comments) => {
 
     //get UI section for display data
     const commentSection = document.getElementById('comment');
