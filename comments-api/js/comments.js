@@ -17,7 +17,7 @@ function displayLoadData(comments) {
         const div = document.createElement('div');
         div.classList.add("comment-div");
         div.innerHTML = `
-            <h4>${comment.name}</h4>
+            <h4 class = "head-name">${comment.name}</h4>
             <h5>${comment.email}</h5>
             <p>${comment.body}</p>
         `;
