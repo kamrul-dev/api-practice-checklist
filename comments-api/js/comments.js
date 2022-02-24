@@ -12,7 +12,7 @@ const displayLoadData = (comments) => {
 
     //get UI section for display data
     const commentSection = document.getElementById('comment');
-    for (const comment of comments) {
+    comments.forEach( comment => {
         console.log(comment);
         const div = document.createElement('div');
         div.classList.add("comment-div");
@@ -22,6 +22,5 @@ const displayLoadData = (comments) => {
             <p class = "ms-2">${comment.body}</p>
         `;
         commentSection.appendChild(div);
-
-    }
+    })
 }
