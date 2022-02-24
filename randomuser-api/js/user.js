@@ -21,7 +21,7 @@ const displayUserData = (users) => {
                 <h5 class="card-title">${user.name.title} ${user.name.first} ${user.name.last}</h5>
                 <p class="card-text"><span class ="badge bg-primary">Street</span> : ${user.location.street.number}, ${user.location.street.name}</p>
                 <p class="card-text">City : ${user.location.city}</p>
-                <p class="card-text">Cordinates : latitude-${user.location.coordinates.latitude}, longitude${user.location.coordinates.longitude}</p>
+                <p class="card-text">Cordinates : latitude ${user.location.coordinates.latitude}, longitude ${user.location.coordinates.longitude}</p>
                 <p class="card-text">Country : ${user.location.country}</p>
                 <p class="card-text">Timezone : ${user.location.timezone.description}, ${user.location.timezone.offset}</p>
             </div>
