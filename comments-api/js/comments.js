@@ -18,8 +18,8 @@ const displayLoadData = (comments) => {
         div.classList.add("comment-div");
         div.innerHTML = `
             <h4 class = "head-name">${comment.name}</h4>
-            <h5>${comment.email}</h5>
-            <p>${comment.body}</p>
+            <h5 class = "text-secondary">${comment.email}</h5>
+            <p class = "ms-2">${comment.body}</p>
         `;
         commentSection.appendChild(div);
 
